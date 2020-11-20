@@ -1,0 +1,6 @@
+﻿  NBS.cpp
+C:\Users\Sebastian\source\repos\NBS\NBS\NBS.cpp(72,8): warning C4101: "event": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Sebastian\source\repos\NBS\NBS\NBS.cpp(157,9): warning C4101: "local_bunker": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Sebastian\source\repos\NBS\NBS\NBS.cpp(183,8): warning C4101: "local_hp": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Sebastian\source\repos\NBS\NBS\NBS.cpp(235,8): warning C4101: "local_hunger": lokalna zmienna, do której nie istnieje odwołanie
+  NBS.vcxproj -> C:\Users\Sebastian\source\repos\NBS\Debug\NBS.exe
