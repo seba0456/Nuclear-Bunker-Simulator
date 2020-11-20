@@ -362,6 +362,7 @@ int main()
 	cout << "" << endl;
 	cout << "Last known note: " << note << endl;
 	cout << "Press Enter, to exit..." << endl;
+	cin.ignore();
 	cin.get();
 		
 	
