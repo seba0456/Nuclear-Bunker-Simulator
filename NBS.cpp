@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cstdlib>
 using namespace std;
 int main()
@@ -187,7 +187,7 @@ int main()
 				{
 					int rr_event;
 					rr_event = (rand() % 3) + 1;
-					hp = hp + 20;
+					hp = hp + 40;
 					medkit = medkit - 1;
 					if (rr_event == 1)
 						note = "I feel much better!";
@@ -354,9 +354,9 @@ int main()
 		
 	}
 	cout << "Game Over!" << endl;
-	if ( hp == 0 )
+	if ( hp <= 0 )
 	cout << "You died!" << endl;
-	if (cotb == 0)
+	else if (cotb <= 0)
 	cout << "Your bunker has been destroyed!" << endl;
 	cout << "You have survived " << day << " days!" << endl;
 	cout << "" << endl;
