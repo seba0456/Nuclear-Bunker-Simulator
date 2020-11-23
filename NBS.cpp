@@ -23,7 +23,7 @@ int main()
 	int hp;
 
 	cout << "Nuclear Bunker Simulator" << endl;
-	cout << "Version 1" << endl;
+	cout << "Version 2" << endl;
 	cout << "Press Enter, to continue..." << endl;
 	cin.get();
 	system("cls");
@@ -62,11 +62,13 @@ int main()
 				thirst = thirst - 50;
 			if (hunger == 0)
 			{
-				hp = hp - 10;
+				hp -= 50;
+				hunger = 0;
 			}
-			if (thirst == 0)
+			if (thirst <= 0)
 			{
-				hp = hp - 50;
+				hp -= 50;
+				thirst = 0;
 			}
 			day = day + 1;
 			int event;
