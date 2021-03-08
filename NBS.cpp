@@ -307,7 +307,7 @@ int nbs()
 			}
 			else if (instruction == 7)
 			{
-				exit(0);
+			return 1;
 			}
 			else if (instruction == 0)
 			{
@@ -373,7 +373,7 @@ int nbs()
 	cin.ignore();
 	cin.get();
 
-
+	return 0;
 }
 void menu()
 {
@@ -393,7 +393,11 @@ void menu()
 	case 1:
 	{
 		system("cls");
-		nbs();
+		if (nbs() == 1)
+		{
+		menu();
+		}
+			
 	}
 	case 2:
 	{
