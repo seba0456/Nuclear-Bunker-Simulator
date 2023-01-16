@@ -22,9 +22,9 @@ int ins_error(int minimum_operation_number, int  maximum_operation_number, int i
 	}
 	return (instruction);
 }
-int nbs()
+int main()
 {
-	int day;
+		int day;
 	int start;
 	//Game
 	start = 0;
@@ -307,7 +307,7 @@ int nbs()
 			}
 			else if (instruction == 7)
 			{
-			return 1;
+				exit(0);
 			}
 			else if (instruction == 0)
 			{
@@ -372,42 +372,4 @@ int nbs()
 	cout << "Press Enter, to exit..." << endl;
 	cin.ignore();
 	cin.get();
-
-	return 0;
-}
-void menu()
-{
-	int instruction;
-	int instructions = 2;
-	cout << "Welcome to Seba0456's console games collection.\n";
-	cout << "All my games created here are made in C++ & and Visual Studio 2019.\n";
-	cout << "All my games created in C++ are source-open.\n";
-	cout << "Feel free to copy or modify games.\n";
-	cout << "Select your game: \n";
-	cout << "1.Nuclear Bunker Symulator\n";
-	cout << instructions << ".Exit program\n";
-	cin >> instruction;
-	instruction = ins_error(1, 2, instruction);
-	switch (instruction)
-	{
-	case 1:
-	{
-		system("cls");
-		if (nbs() == 1)
-		{
-		menu();
-		}
-			
-	}
-	case 2:
-	{
-		exit(0);
-	}
-	}
-}
-
-
-int main()
-{
-	menu();
 }
